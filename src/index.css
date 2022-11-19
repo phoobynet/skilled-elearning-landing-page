@@ -4,13 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-sans;
-  background-color: #F2F2F2;
+@layer base {
+  body {
+    background-color: #F2F2F2;
+  }
 }
 
-.heading-xl {
-  @apply font-extrabold;
-  font-size: 56px;
-  line-height: 70px;
+/* Cannot use component layer due to dynamic class generation inside Button component*/
+.btn {
+  @apply rounded-full text-white py-3 px-6 transition-all duration-200 active:scale-95;
 }
+
+.btn-primary {
+  @apply bg-gun-metal hover:bg-slate-gray active:bg-gun-metal;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-b from-tomato to-maroon hover:opacity-50 active:opacity-100;
+}
+
+.btn-tertiary {
+  @apply bg-gradient-to-b from-royal-blue to-maroon hover:opacity-50 active:opacity-100;
+}
+
