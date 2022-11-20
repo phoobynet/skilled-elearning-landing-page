@@ -4,10 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    background-color: #F2F2F2;
-  }
+body {
+  @apply bg-gradient-to-b from-white to-slate-100 min-h-[2000px];
 }
 
 /* Cannot use component layer due to dynamic class generation inside Button component*/

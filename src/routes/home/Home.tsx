@@ -1,12 +1,13 @@
-import HomeHeader from '@/routes/home/HomeHeader'
+import HomeHero from '@/routes/home/HomeHero'
 import HomeFooter from '@/routes/home/HomeFooter'
-import styles from './Home.module.scss'
 import HomeMain from '@/routes/home/HomeMain'
+import HomeTopBar from '@/routes/home/HomeTopBar'
 
 export default function Home() {
   return (
-    <div className={styles.home}>
-      <HomeHeader />
+    <div className="h-screen">
+      <HomeTopBar />
+      <HomeHero />
       <HomeMain />
       <HomeFooter />
     </div>

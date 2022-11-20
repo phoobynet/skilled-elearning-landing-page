@@ -1,28 +1,36 @@
 import HeadingSmall from '@/components/HeadingSmall'
-import BodySmall from '@/components/BodySmall'
-import { ReactNode } from 'react'
+import BodyMedium from '@/components/BodyMedium'
 
 type Props = {
   title: string
   description: string
-  icon: ReactNode
+  image: string
 }
 
-export default function Card({ title, description }: Props) {
+export default function Card({ title, description, image }: Props) {
   return (
-    <div className="h-[346px] w-[350px] rounded-lg bg-white">
-      <header>
+    <div className="relative flex h-[346px] w-[350px] flex-col justify-between rounded-xl bg-white px-6 py-12 drop-shadow-lg">
+      <img
+        src={image}
+        alt=""
+        className="absolute -translate-y-[4.5rem]"
+      />
+      <header className="pt-3">
         <HeadingSmall>{title}</HeadingSmall>
       </header>
-      <p>
-        <BodySmall>{description}</BodySmall>
-      </p>
-      <a
-        href="#"
-        className="text-violet-red"
-      >
-        Get Started
-      </a>
+      <main>
+        <p className="text-light-slate-gray">
+          <BodyMedium>{description}</BodyMedium>
+        </p>
+      </main>
+      <footer>
+        <a
+          href="#"
+          className="text-violet-red"
+        >
+          Get Started
+        </a>
+      </footer>
     </div>
   )
 }
