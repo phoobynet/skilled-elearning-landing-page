@@ -9,7 +9,7 @@ type Props = {
 
 export default function Card({ title, description, image }: Props) {
   return (
-    <div className="relative flex h-[346px] w-[350px] flex-col justify-between rounded-xl bg-white px-6 py-12 drop-shadow-sm">
+    <div className="relative flex h-[346px] w-[350px] flex-col justify-between place-self-start self-end rounded-xl bg-white px-6 py-12 drop-shadow-sm">
       <img
         src={image}
         alt=""
