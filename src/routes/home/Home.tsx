@@ -5,7 +5,7 @@ import HomeTopBar from '@/routes/home/HomeTopBar'
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div className="h-screen overflow-hidden">
       <HomeTopBar />
       <HomeHero />
       <HomeMain />
