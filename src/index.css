@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-b from-white to-slate-100 min-h-[2000px];
+  @apply min-h-[3500px] bg-gradient-to-b from-white via-slate-50 via-slate-100 to-slate-200;
 }
 
 /* Cannot use component layer due to dynamic class generation inside Button component*/
