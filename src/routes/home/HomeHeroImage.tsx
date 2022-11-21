@@ -19,7 +19,7 @@ export default function HomeHeroImage() {
       <img
         src="/assets/image-hero-desktop.webp"
         alt=""
-        className="absolute -z-10 hidden -translate-y-1/3 translate-x-[40rem] transform-gpu md:hidden lg:block"
+        className="absolute -z-10 hidden -translate-y-1/3 transform-gpu transition-all md:hidden lg:block lg:translate-x-[30rem] xl:translate-x-[40rem]"
       />
     </>
   )
