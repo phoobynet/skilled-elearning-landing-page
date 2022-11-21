@@ -5,7 +5,12 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-[3500px] bg-gradient-to-b from-white via-slate-50 via-slate-100 to-slate-200;
+  //@apply min-h-[3500px] bg-gradient-to-b from-white via-slate-50 via-slate-100 to-slate-200;
+}
+
+.heading-xl {
+  @apply text-[56px] font-extrabold;
+  line-height: 56px;
 }
 
 /* Cannot use component layer due to dynamic class generation inside Button component*/
@@ -18,10 +23,10 @@ body {
 }
 
 .btn-secondary {
-  @apply bg-gradient-to-b from-tomato to-maroon hover:opacity-50 active:opacity-100;
+  @apply bg-gradient-to-b from-tomato to-maroon hover:brightness-150;
 }
 
 .btn-tertiary {
-  @apply bg-gradient-to-b from-royal-blue to-maroon hover:opacity-50 active:opacity-100;
+  @apply bg-gradient-to-b from-royal-blue to-maroon hover:brightness-150;
 }
 

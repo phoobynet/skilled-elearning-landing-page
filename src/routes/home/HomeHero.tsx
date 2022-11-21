@@ -1,25 +1,22 @@
 import Button from '@/components/Button'
-import HeadingExtraLarge from '@/components/HeadingExtraLarge'
-import BodyMedium from '@/components/BodyMedium'
+import HomeHeroImage from '@/routes/home/HomeHeroImage'
+import HeroHeading from '@/components/HeroHeading'
+import HeroMessage from '@/components/HeroMessage'
 
 export default function HomeHero() {
   return (
-    <header className="container relative mx-auto mb-auto grid h-[500px] max-w-6xl grid-cols-2 pt-24">
-      <div className="flex max-w-[465px] flex-col space-y-6">
-        <HeadingExtraLarge>Maximise skill, minimise budget</HeadingExtraLarge>
-        <BodyMedium className="text-light-slate-gray">
-          Our modern courses across a range of in-demand skills will give you
-          the knowledge you need to live the life you want.
-        </BodyMedium>
+    <header className="container relative mx-auto grid max-w-sm grid-cols-none px-3 md:max-w-3xl md:grid-cols-2 md:px-0 md:pt-24 lg:h-[500px] lg:max-w-6xl">
+      <div className="flex flex-col space-y-6 lg:max-w-[465px]">
+        <HeroHeading>Maximise skill, minimise budget</HeroHeading>
+        <HeroMessage>
+          Our modern courses across a range of in&#x2011;demand skills will give
+          you the knowledge you need to live the life you want.
+        </HeroMessage>
         <div>
           <Button kind="secondary">Get Started</Button>
         </div>
       </div>
-      <img
-        src="/assets/image-hero-desktop.webp"
-        alt=""
-        className="absolute -z-10 -translate-y-1/3 translate-x-[40rem] transform-gpu"
-      />
+      <HomeHeroImage />
     </header>
   )
 }
