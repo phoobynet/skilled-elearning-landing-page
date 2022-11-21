@@ -13,6 +13,50 @@ module.exports = {
         tomato: '#FF6F48',
         'royal-blue': '#4851FF',
       },
+      fontSize: {
+        'body-md': [
+          '1.125rem',
+          {
+            lineHeight: '1.75rem',
+            fontWeight: '500',
+          },
+        ],
+        'body-sm': [
+          '1rem',
+          {
+            lineHeight: '1.75rem',
+            fontWeight: '700',
+          },
+        ],
+        'heading-xl': [
+          '3.5rem',
+          {
+            lineHeight: '4.375rem',
+            fontWeight: '800',
+          },
+        ],
+        'heading-lg': [
+          '2.5rem',
+          {
+            lineHeight: '3.188rem',
+            fontWeight: '800',
+          },
+        ],
+        'heading-md': [
+          '2rem',
+          {
+            lineHeight: '2.5rem',
+            fontWeight: '800',
+          },
+        ],
+        'heading-sm': [
+          '1.5rem',
+          {
+            lineHeight: '1.75rem',
+            fontWeight: '800',
+          },
+        ],
+      },
     },
     fontFamily: {
       sans: ['Plus Jakarta Sans', 'sans-serif'],

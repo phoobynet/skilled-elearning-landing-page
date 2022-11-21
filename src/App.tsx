@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './routes/home/Home'
-import Demo from '@/routes/demo/Demo'
+import Home from '@/routes/home/Home'
 
 export default function App() {
   return (
@@ -8,10 +7,6 @@ export default function App() {
       <Route
         path="/"
         element={<Home />}
-      />
-      <Route
-        path="/demo"
-        element={<Demo />}
       />
     </Routes>
   )

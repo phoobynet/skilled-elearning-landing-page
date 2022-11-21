@@ -1,32 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  //@apply min-h-[3500px] bg-gradient-to-b from-white via-slate-50 via-slate-100 to-slate-200;
-}
 
-.heading-xl {
-  @apply text-[56px] font-extrabold;
-  line-height: 56px;
-}
+@layer components {
+  .btn {
+    @apply rounded-full text-white py-3 px-6 transition-all duration-200 active:scale-95;
+  }
 
-/* Cannot use component layer due to dynamic class generation inside Button component*/
-.btn {
-  @apply rounded-full text-white py-3 px-6 transition-all duration-200 active:scale-95;
-}
+  .btn-primary {
+    @apply bg-gun-metal hover:bg-slate-gray active:bg-gun-metal;
+  }
 
-.btn-primary {
-  @apply bg-gun-metal hover:bg-slate-gray active:bg-gun-metal;
-}
+  .btn-secondary {
+    @apply bg-gradient-to-b from-tomato to-maroon hover:brightness-150;
+  }
 
-.btn-secondary {
-  @apply bg-gradient-to-b from-tomato to-maroon hover:brightness-150;
-}
-
-.btn-tertiary {
-  @apply bg-gradient-to-b from-royal-blue to-maroon hover:brightness-150;
+  .btn-tertiary {
+    @apply bg-gradient-to-b from-royal-blue to-maroon hover:brightness-150;
+  }
 }
 

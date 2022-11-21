@@ -1,6 +1,3 @@
-import HeadingSmall from '@/components/HeadingSmall'
-import BodyMedium from '@/components/BodyMedium'
-
 type Props = {
   title: string
   description: string
@@ -9,19 +6,17 @@ type Props = {
 
 export default function Card({ title, description, image }: Props) {
   return (
-    <div className="relative flex h-[346px] flex-col justify-between place-self-start self-end rounded-xl bg-white px-6 py-12 drop-shadow-lg">
+    <div className="relative flex h-[346px] flex-col justify-between place-self-start self-end rounded-xl bg-white px-6 py-12">
       <img
         src={image}
         alt=""
         className="absolute -translate-y-[4.5rem]"
       />
       <header className="pt-3">
-        <HeadingSmall>{title}</HeadingSmall>
+        <h3 className="text-heading-sm">{title}</h3>
       </header>
       <main>
-        <p className="text-light-slate-gray">
-          <BodyMedium>{description}</BodyMedium>
-        </p>
+        <p className="text-body-medium text-light-slate-gray">{description}</p>
       </main>
       <footer>
         <a

@@ -1,4 +1,3 @@
-import Button from '@/components/Button'
 import HomeHeroImage from '@/routes/home/HomeHeroImage'
 import HeroHeading from '@/components/HeroHeading'
 import HeroMessage from '@/components/HeroMessage'
@@ -13,7 +12,7 @@ export default function HomeHero() {
           you the knowledge you need to live the life you want.
         </HeroMessage>
         <div>
-          <Button kind="secondary">Get Started</Button>
+          <button className="btn btn-secondary">Get Started</button>
         </div>
       </div>
       <HomeHeroImage />
