@@ -12,20 +12,20 @@ export default function Card({ title, description, image }: Props) {
         alt=""
         className="absolute -translate-y-[4.5rem]"
       />
-      <header className="pt-3">
+      <div className="pt-3">
         <h3 className="text-heading-sm">{title}</h3>
-      </header>
-      <main>
+      </div>
+      <div>
         <p className="text-body-medium text-light-slate-gray">{description}</p>
-      </main>
-      <footer>
+      </div>
+      <div>
         <a
           href="#"
           className="text-violet-red"
         >
           Get Started
         </a>
-      </footer>
+      </div>
     </div>
   )
 }
